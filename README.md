@@ -9,7 +9,7 @@ Pairing heap is a sorting algorithm with good practical amortized performance. T
 ### How to use?
 
 You can use this module as regular Erlang modules or compile and test it by this recipe:
-(write these command on Erlang REPL)
+(write these commands on Erlang REPL)
 ```
 c(epriq).
 c(epriq_test).
