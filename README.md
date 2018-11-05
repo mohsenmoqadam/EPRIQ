@@ -15,7 +15,7 @@ c(epriq).
 c(epriq_test).
 epriq_test:run().
 ```
-It creates a Queue with random priority between 1 and 10 and then prints nodes that added to this queue based on priority.
+It creates an empty queue and adds 100 nodes to it with random priority between 1 and 10. then prints nodes based on their priority.
 
 ## Author
 
