@@ -1,0 +1,26 @@
+## Logging configuration
+## Accepts any tracing filter expression, e.g. "info", "debug,hyper=warn,io=error"
+[logging]
+filter = "info"
+
+## TUN device configuration
+[tun]
+## Optional custom interface name. Omit to let the OS choose.
+name = "poc0"
+## Local tunnel endpoint IP. Must be unique per peer.
+address = "10.13.0.1"
+## Remote endpoint IP for point-to-point routes. Optional.
+destination = "10.13.0.2"
+## Netmask for the TUN interface.
+netmask = "255.255.255.252"
+## MTU for encapsulated packets.
+mtu = 1400
+
+## UDP transport configuration
+[tunnel]
+## Local bind address and port.
+bind = "0.0.0.0:55000"
+## Remote peer's public address and port.
+peer = "198.51.100.12:55000"
+## Optional keepalive (seconds). Use 0 or omit to disable.
+keepalive_interval_secs = 25
